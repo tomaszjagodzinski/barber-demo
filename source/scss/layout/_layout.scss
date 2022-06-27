@@ -1,0 +1,134 @@
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 $grid-base * 1.5;
+    overflow: visible;
+
+    &--full{
+        max-width: 1920px;
+    }
+    &--no-padding{
+        padding: 0;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: $grid-base * 2;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+
+    @include large-up{
+        grid-template-columns: repeat(2, 1fr);
+    }
+     
+    &--3{
+        grid-template-columns: repeat(1, 1fr);
+
+        @include medium-up{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &--4{
+        grid-template-columns: repeat(1, 1fr);
+
+        @include medium-up{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include large-up{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.col{
+    width: 100%;
+    padding: $grid-base * 1.5;
+    display: inline-block;
+
+    &--md25{
+        @include medium-up{
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    &--md33{
+        @include medium-up{
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+    }
+    &--md50{
+        @include medium-up{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &--md66{
+        @include medium-up{
+            flex: 0 0 66.6%;
+            max-width: 66.6%;
+        }
+    }
+    &--md75{
+        @include medium-up{
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+    }
+
+    &--lg25{
+        @include large-up{
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    &--lg33{
+        @include large-up{
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+    }
+    &--lg50{
+        @include large-up{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &--lg66{
+        @include large-up{
+            flex: 0 0 66.6%;
+            max-width: 66.6%;
+        }
+    }
+    &--lg75{
+        @include large-up{
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+    }
+    &--hiden-sm{
+        display: none;
+        @include small-up{
+            display: inline-block;
+        }
+    }
+}
+@import "section";
+@import "showcase";
+@import "opinions";
+@import "about";
+@import "services";
+@import "offers";
+@import "work-hours";
+@import "header";
+@import "footer";

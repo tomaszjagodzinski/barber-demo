@@ -1,0 +1,71 @@
+.navigation{
+    &--desktop{
+        display: none;
+
+        @include medium-up{
+            display: block;
+
+            & ul{
+                display: flex;
+            }
+            & a{
+                padding: 10px;
+                margin: 0 20px;
+                color: $white;
+                font-weight: $font-weight-bold;
+                transition: all .2s ease-in-out;
+                text-align: center;
+
+                &:hover{
+                    color: $primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &--mobile{
+        background-color: $dark-grey;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 20;
+    }
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        margin: 0;
+    }
+
+    &__top{
+        padding: 19px 24px;
+        border-bottom: 1px solid $white;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list{
+        padding: 45px 24px 18px;
+        border-bottom: 1px solid $white;
+        text-align: center;
+    
+        & a{
+            color: $primary;
+            display: block;
+            margin-bottom: 28px;
+            font-weight: $font-weight-semibold;
+            transition: all .2s ease-in-out;
+            text-transform: uppercase;
+
+            &:hover{
+                color: $light-blue;
+            }
+        }
+    }
+}

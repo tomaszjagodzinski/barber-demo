@@ -1,0 +1,48 @@
+.services{
+    & .grid{
+        grid-template-columns: 1fr;
+        gap: 0;
+        @include medium-up{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+        background-image: url(/dist/images/right-image.png);
+        background-position: center;
+        background-size: cover;
+        display: none;
+        @include medium-up{
+            display: initial;
+        }
+    }
+    &__content{
+        padding: 50px;
+        text-align: center;
+        background-color: $verylight-grey;
+        & .grid{
+            gap: 20px;
+            @include small-up{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    &__label{
+        @media (min-width: 700px){
+            font-size: 80px;
+        }
+        @include medium-up{
+            font-size: 100px;
+        }
+        @include large-up{
+            font-size: 150px;
+        }
+    }
+    &__title-group{
+        display: block;
+        @include medium-up{
+            display: none;
+        }
+    }
+}

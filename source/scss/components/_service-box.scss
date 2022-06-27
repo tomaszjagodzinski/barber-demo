@@ -1,0 +1,24 @@
+.service-box{
+    border: 1px dotted $light-grey;
+    padding: 30px 10px;
+    transition: all 0.3s linear;
+    
+    &:hover{
+        background-color: $primary;
+        border: 1px solid $primary;
+        h2,p{
+            color: $white;
+        }
+    }
+
+    &__icon{
+        max-height: 36px;
+    }
+
+    &__description{
+        color: $black;
+    }
+    &__arrow{
+        color: $primary;
+    }
+}

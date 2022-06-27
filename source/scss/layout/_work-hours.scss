@@ -1,0 +1,33 @@
+.work-hours{
+    & .grid{
+        gap: 0;
+    }
+    &__content{
+        width: 60%;
+        margin: 0 auto;
+        padding: 45px 0;
+    }
+    &__days{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 0;
+        &.border{
+            border-top: 1px solid $primary;
+            border-bottom: 1px solid $primary;
+        }
+        p{
+            font-weight: $font-weight-semibold;
+        }
+        span{
+            color: $primary;
+        }
+    }
+
+    &__newsletter{
+        padding: 50px 20px;
+        background-color: #111111;
+    }
+}

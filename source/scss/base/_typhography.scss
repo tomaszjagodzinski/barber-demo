@@ -1,0 +1,60 @@
+.heading{
+    font-weight: $font-weight-bold;
+    margin: 0 0 15px 0;
+    color: $primary;
+
+    &--1{
+        font-size: $font-size-4;
+        @include small-up{
+            font-size: $font-size-3;
+        }
+        @include large-up{
+            font-size: $font-size-1;
+        }
+    }
+    &--2{
+        font-size: $font-size-3;
+        @include large-up{
+            font-size: $font-size-2;
+        }
+    }
+    &--3{
+        font-size: $font-size-6;
+        @include large-up{
+            font-size: $font-size-5;
+        }
+    }
+    &--center{
+        text-align: center;
+    }
+    &--white{
+        color: $white;
+    }
+    &--black{
+        color: $black;
+    }
+}
+
+// .label{
+//     display: block;
+//     font-size: $font-size-8;
+//     font-weight: $font-weight-bold;
+//     color: $light-blue;
+//     line-height: $line-height-small;
+//     text-align: center;
+//     text-transform: uppercase;
+
+//     @include medium-up{
+//         font-size: $font-size-7;
+//     }
+
+//     &--left{
+//         text-align: center;
+//         @include medium-up{
+//             text-align: left;
+//         }
+//     }
+//     &--white{
+//         color: $white;
+//     }
+// }

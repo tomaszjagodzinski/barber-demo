@@ -1,0 +1,106 @@
+.interactive-element {
+    position: relative;
+    opacity: 0;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
+    transition: 600ms; }
+    .interactive-element.interactive-element--normal {
+      top: 20px; }
+      .interactive-element.interactive-element--normal.visible {
+        opacity: 1;
+        top: 0; }
+    .interactive-element.interactive-element--special {
+      position: absolute; }
+    .interactive-element.interactive-element--special-show.visible {
+      opacity: 1; }
+    .interactive-element.interactive-element--partner-slide-right {
+      right: -20px; }
+      .interactive-element.interactive-element--partner-slide-right.visible {
+        right: 0;
+        opacity: 1; }
+    .interactive-element.interactive-element--partner-slide-left {
+      left: -20px; }
+      .interactive-element.interactive-element--partner-slide-left.visible {
+        left: 0;
+        opacity: 1; }
+    .interactive-element.interactive-element--slide-left {
+      -webkit-transform: translate(-100%, 0);
+      -moz-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+      -o-transform: translate(-100%, 0);
+      transform: translate(-100%, 0); }
+      .interactive-element.interactive-element--slide-left.visible {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 1; }
+    .interactive-element.interactive-element--slide-top::after {
+      width: 0px;
+      transition: 600ms; }
+    .interactive-element.interactive-element--slide-top.visible {
+      opacity: 1; }
+      .interactive-element.interactive-element--slide-top.visible::after {
+        width: 105px; }
+    .interactive-element.interactive-element--slide-top-vertical::before {
+      height: 0px;
+      transition: 600ms; }
+    .interactive-element.interactive-element--slide-top-vertical.visible {
+      opacity: 1; }
+      .interactive-element.interactive-element--slide-top-vertical.visible::before {
+        height: 190px; }
+    .interactive-element.interactive-element--slide-top-vertical-short::before {
+      height: 0px;
+      transition: 600ms; }
+    .interactive-element.interactive-element--slide-top-vertical-short.visible {
+      opacity: 1; }
+      .interactive-element.interactive-element--slide-top-vertical-short.visible::before {
+        height: 120px; }
+    .interactive-element.interactive-element--slide-right {
+      -webkit-transform: translate(100%, 0);
+      -moz-transform: translate(100%, 0);
+      -ms-transform: translate(100%, 0);
+      -o-transform: translate(100%, 0);
+      transform: translate(100%, 0); }
+      .interactive-element.interactive-element--slide-right.visible {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0); }
+    .interactive-element.interactive-element--delay-200 {
+      -webkit-transition-delay: 200ms;
+      -moz-transition-delay: 200ms;
+      -ms-transition-delay: 200ms;
+      -o-transition-delay: 200ms;
+      transition-delay: 200ms; }
+      .interactive-element.interactive-element--delay-200.visible {
+        opacity: 1; }
+    .interactive-element.interactive-element--delay-400 {
+      -webkit-transition-delay: 400ms;
+      -moz-transition-delay: 400ms;
+      -ms-transition-delay: 400ms;
+      -o-transition-delay: 400ms;
+      transition-delay: 400ms; }
+      .interactive-element.interactive-element--delay-400.visible {
+        opacity: 1; }
+    .interactive-element.interactive-element--delay-600 {
+      -webkit-transition-delay: 600ms;
+      -moz-transition-delay: 600ms;
+      -ms-transition-delay: 600ms;
+      -o-transition-delay: 600ms;
+      transition-delay: 600ms; }
+      .interactive-element.interactive-element--delay-600.visible {
+        opacity: 1; }
+    .interactive-element.interactive-element--delay-800 {
+      -webkit-transition-delay: 800ms;
+      -moz-transition-delay: 800ms;
+      -ms-transition-delay: 800ms;
+      -o-transition-delay: 800ms;
+      transition-delay: 800ms; }
+      .interactive-element.interactive-element--delay-800.visible {
+        opacity: 1; }

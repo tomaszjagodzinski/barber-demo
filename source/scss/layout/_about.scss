@@ -1,0 +1,25 @@
+.about{
+    & .grid{
+        grid-template-columns: 1fr;
+        gap: 0;
+        @include medium-up{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+        background-image: url(/dist/images/left-image.png);
+        background-position: center;
+        background-size: cover;
+        display: none;
+        @include medium-up{
+            display: initial;
+        }
+    }
+    &__content{
+        padding: 50px;
+        text-align: center;
+        background-color: $verylight-grey;
+    }
+}

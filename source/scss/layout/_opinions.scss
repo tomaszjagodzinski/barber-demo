@@ -1,0 +1,25 @@
+.opinions{
+    background-color: $black;
+
+    &__single{
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        @include medium-up{
+            width: 50%;
+        }
+        & .quote{
+            color: $dark-grey;
+            font-size: 120px;
+            position: absolute;
+            &--top{
+                top: 0;
+                left: 0;
+            }
+            &--bottom{
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
